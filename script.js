@@ -6,13 +6,15 @@ document.addEventListener('DOMContentLoaded', () => {
         link.addEventListener('click', (e) => {
             e.preventDefault(); // Prevent default anchor behavior
 
-            // Remove active class from all sections
-            sections.forEach(section => section.classList.remove('active'));
+            // Remove active class from all sections (fade out)
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
 
-            // Add active class to the selected section
+            // Add active class to the selected section (fade in)
             const targetId = e.target.getAttribute('href');
             const targetSection = document.querySelector(targetId);
-            targetSection.classList.add('active');  // Just add the 'active' class for fade-in effect
+            targetSection.classList.add('active');  // Add active class to the selected section
 
             // Optionally scroll to the top of the page
             window.scrollTo({
