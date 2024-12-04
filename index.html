@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Welcome to the portfolio of Michael Anthony Jimenez, a creative web developer specializing in modern web design, responsive development, and dynamic JavaScript solutions. Explore services, projects, and get in touch!">
+        <title>Modern Portfolio</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
 <body>
     <header>
         <div class="logo">My Portfolio</div>
@@ -22,11 +23,13 @@
 
     <main>
         <!-- Home Section -->
-        <section id="home" class="section">
+        <section id="home" class="section active">
             <div class="overlay">
-                <h1>Welcome to My Portfolio</h1>
-                <p>I'm Michael Anthony Jimenez, a creative web developer.</p>
+                <div class="section-content">
+                    <h1>Welcome to My Website</h1>
+                    <p>I'm Michael Anthony Jimenez, a creative web developer.</p>
                 <button class="cta-button">Discover More</button>
+                </div>
             </div>
         </section>
 
@@ -90,7 +93,7 @@
         <section id="contact" class="section">
             <div class="section-content">
                 <h2>Contact Me</h2>
-                <form id="contactForm">
+                <form id="contactForm" action="contact.php" method="POST">
                     <div class="form-group">
                         <label for="name">Name:</label>
                         <input type="text" id="name" name="name" required>
@@ -110,7 +113,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 Michael Anthony Jimenez. All Rights Reserved.</p>
+        <p>&copy; 2024 Michael Anthony JImenez. All Rights Reserved.</p>
     </footer>
 
     <script src="script.js"></script>
